@@ -82,3 +82,79 @@ All lowercase with underscores between words (common in Python).
 
 This lesson taught me that variables are very important in JavaScript because they help us store and manage data. I learned the differences between var, let, and const, why we should avoid using var, the rules for naming variables, and the different styles like Camel Case  (recommended), Pascal Case, and Snake Case. Understanding variables gives a good foundation before we move to topics like functions, objects, arrays, and DOM.
 
+## Variables
+
+Variables are used to store data values in JavaScript.
+
+# Primitive Data Types
+
+Primitive data types include:
+
+- **String**: Represents textual data.
+- **Number**: Represents numeric values 
+- **Boolean**: Represents true or false.
+- **Undefined**: A variable that has been declared but not assigned a value.
+- **Null**: Represents the  absence of any object value.
+
+
+-----
+
+## Ways to Create a String Variable (3 ways)
+
+### 1. Double Quotes
+
+Use when your text has single quotes inside.
+
+
+let str1 = "I am patricia";
+let str2 = "Daniel said '23 is a number'";
+```
+
+### 2. Single Quotes
+
+Use when your text has double quotes inside.
+
+
+let str1 = 'I am patricia ';
+let str2 = 'Daniel said "23 is a number"';
+```
+
+### 3. Backticks (Template Strings)
+
+Use for multi-line strings or when mixing quotes.
+
+
+let str1 = `I am patricia`;
+let str2 = `Multi line string
+Multi line strings
+"" '' both single and double quotes`;
+
+
+## Difference Between Undefined and Null
+
+### Undefined
+
+A variable declared but no value given yet.
+
+
+let name;
+console.log(name); // undefined
+```
+
+### Null
+
+Deliberately set to empty.
+
+
+let name = null;
+console.log(name); // null
+```
+
+**Simple way to remember:**
+
+- `undefined` = forgot to give it a value
+- `null` = chose to leave it empty
+
+
+
+
