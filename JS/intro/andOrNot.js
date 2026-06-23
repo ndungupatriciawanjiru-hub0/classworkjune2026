@@ -20,3 +20,16 @@ ${is_greater_than_18&&has_more_than_20k}
 let simplified=mercy_age>18&&mercy_balance>20000
 console.log(`simplified ${simplified}`)
 console.log(`further simplification is ${mercy_age>18&&mercy_balance>20000}`)
+
+
+
+console.log(`mercy is age is greter than 18
+    or she has more than 20k in  her account
+    ${is_greater_than_18||has_more_than_20k}
+    `)
+
+/*
+Or atleast one statement has to be true for the whole statement to be true
+*/
+console.log(`This is not true = ${!true}`)
+console.log(`This is not false = ${!false}`)
