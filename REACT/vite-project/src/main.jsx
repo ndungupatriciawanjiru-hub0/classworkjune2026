@@ -1,10 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import Mapping from "./Mapping";
+import AmazonPage2 from "./AmazonPage2.0";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Mapping />
+    <AmazonPage2 />
   </StrictMode>,
 );
