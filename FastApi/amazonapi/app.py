@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 import uvicorn
 from routes.member import router as member_router
+from routes.product import router as product_router
 from db import prisma
 
 
@@ -14,14 +15,13 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Amazon api", lifespan=lifespan)
 
-# register router
+# register routers
 app.include_router(member_router, prefix="/member")
+app.include_router(product_router, prefix="/product")
 
 
 @app.get("/")
 async def root():
-    members = await prisma.member.find_many()
-    print(members)
     return {"message": "API is running"}
 
 
